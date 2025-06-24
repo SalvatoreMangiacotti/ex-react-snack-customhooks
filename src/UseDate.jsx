@@ -14,7 +14,7 @@ function useDate() {
 
         }, 1000);
 
-        return () => clearInterval(intervalId);
+        return () => clearInterval(intervalId); // Quando il componente viene smontato non si genererà un memory leak
 
     }, []);
 

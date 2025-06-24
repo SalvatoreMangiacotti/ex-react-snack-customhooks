@@ -1,5 +1,6 @@
 // import useSwitch from "./UseSwitch";
-import useDate from "./UseDate";
+// import useDate from "./UseDate";
+import useCustomPointer from "./UseCustomPointer";
 
 // function App() {
 
@@ -14,19 +15,35 @@ import useDate from "./UseDate";
 // );
 // }
 
+
 // ✅ Snack 2
 
-function App() {
+// function App() {
 
-  const currentDate = useDate();
+//   const currentDate = useDate();
+
+//   return (
+//     <div>
+//       <h1>Data e ora attuali:</h1>
+//       <p>{currentDate.toLocaleString()}</p>
+//     </div>
+//   );
+
+// }
+
+
+// ✅ Snack 3
+
+function App() {
+  const customPointer = useCustomPointer("🔥");
 
   return (
     <div>
-      <h1>Data e ora attuali:</h1>
-      <p>{currentDate.toLocaleString()}</p>
+      <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      {customPointer}
     </div>
   );
-
 }
+
 
 export default App;
