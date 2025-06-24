@@ -35,11 +35,12 @@ import useCustomPointer from "./UseCustomPointer";
 // ✅ Snack 3
 
 function App() {
-  const customPointer = useCustomPointer("🔥");
+  const customPointer = useCustomPointer(<span style={{ fontSize: 50 }}>✈️</span>);
 
   return (
     <div>
       <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      <span style={{ fontSize: 250 }}>🌏</span>
       {customPointer}
     </div>
   );
